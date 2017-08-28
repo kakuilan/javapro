@@ -1,4 +1,5 @@
 //二维数组
+import java.util.Arrays;
 public class Test028 {
 	public static void main(String[] args) {
 		//定义一个二维数组
@@ -18,4 +19,13 @@ public class Test028 {
 			System.out.println(a[0][i]);
 		}
 	}
+
+	//同时初始化二维数组的2个维度
+	int[][] b = new int[3][4];
+	//使用静态初始化语法来初始化一个二位数组
+	String[][] str1 = new String[][] {new String[3]
+	,new String[]{"Helow"}};
+	String[][] str2 = {new String[3], new String[]{"world"}};
+
+
 }
