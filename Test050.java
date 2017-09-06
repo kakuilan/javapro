@@ -19,12 +19,18 @@ public class Test050 extends Bird{
 
 	//此处并不是方法重写，所以可以增加static关键字
 	public static void test(){
-	
 	}
 
+
+	//在子类方法中通过supper显式调用父类被覆盖的实例方法
+	public void callOverrideMethod(){
+		super.fly();
+	}
 
 	public static void main(String[] args) {
 		Test050 obj = new Test050();
 		obj.fly();
+		obj.callOverrideMethod();
+
 	}
 }
